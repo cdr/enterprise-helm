@@ -35,5 +35,11 @@ pushd "$PROJECT_ROOT" >/dev/null
     do
       git --no-pager diff "$file"
     done
+
+    echo "readme"
+    echo ""
+    cat README.md
+
+    exit 1
   fi
 popd >/dev/null
